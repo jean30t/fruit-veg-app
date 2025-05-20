@@ -13,7 +13,7 @@ async function processImage() {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          "Authorization": "Bearer YOUR_ROBOFLOW_API_KEY"
+          "Authorization": "Bearer GB0kZ53wdYSBmy34HxXW"
         },
         body: JSON.stringify({ image: base64Image })
       });
