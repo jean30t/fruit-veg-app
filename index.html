@@ -3,13 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fruit & Veg AI Detection</title>
-  <script defer src="script.js"></script>
+  <title>Fruit & Veg Size Calculator</title>
   <script defer src="fruitVegDb.js"></script>
+  <script defer src="script.js"></script>
   <style>
     body {
       font-family: Arial, sans-serif;
       padding: 2rem;
+      max-width: 600px;
+      margin: auto;
     }
     #results {
       margin-top: 2rem;
@@ -22,9 +24,11 @@
   </style>
 </head>
 <body>
-  <h1>Fruit & Veg Detector</h1>
-  <input type="file" id="imageInput" accept="image/*" />
-  <button onclick="processImage()">Detect</button>
+  <h1>Fruit & Veg Size Calculator</h1>
+  <label for="itemSelect">Select fruit or vegetable:</label>
+  <select id="itemSelect"></select>
+  <button onclick="showItemInfo()">Show Info</button>
   <div id="results"></div>
 </body>
 </html>
+
