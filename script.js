@@ -9,7 +9,7 @@ async function processImage() {
     document.getElementById("results").innerHTML = "Processing...";
 
     try {
-      const response = await fetch("https://detect.roboflow.com/fruit-veg-detector/1", {
+      const response = await fetch("https://detect.roboflow.com/fruit-veg-detector/train", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
